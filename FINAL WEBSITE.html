@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Structures & Algorithms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* GOOGLE FONT */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f5f6fa;
+            color: #1b1b1b;
+            transition: 0.3s;
+        }
+
+        .dark-mode {
+            background: #0d1117;
+            color: #ffffff;
+        }
+
+
+        .navbar {
+            background: linear-gradient(90deg, #0066ff, #3c8bff);
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 18px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .active {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+     
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(120deg, #0066ff, #2e59ff, #718bff);
+            color: white;
+            border-radius: 0 0 40px 40px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+
+    
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .dark-mode .card {
+            background: #161b22;
+            color: white;
+        }
+
+        /* DARK MODE BUTTON */
+        #darkBtn {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            padding: 15px 22px;
+            background: #0066ff;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+
+        pre {
+            background: rgba(0,0,0,0.05);
+            padding: 15px;
+            border-radius: 10px;
+            overflow-x: auto;
+        }
+
+        .dark-mode pre {
+            background: rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#pseudocode">Pseudocode</a>
+    <a href="#datastructures">Data Structures</a>
+    <a href="#maker">Maker</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h1>Data Structures & Algorithms</h1>
+    <p>CC105 FINAL REQUIREMENT</p>
+</section>
+
+
+<h2 class="page-title" id="algorithms">10 Algorithms</h2>
+<div class="card-container">
+    <div class="card"><h3>1. Linear Search</h3><p>Check elements one by one.</p></div>
+    <div class="card"><h3>2. Binary Search</h3><p>Efficient search on sorted array.</p></div>
+    <div class="card"><h3>3. Bubble Sort</h3><p>Swap adjacent elements to sort.</p></div>
+    <div class="card"><h3>4. Selection Sort</h3><p>Select smallest element repeatedly.</p></div>
+    <div class="card"><h3>5. Insertion Sort</h3><p>Build sorted array step by step.</p></div>
+    <div class="card"><h3>6. Merge Sort</h3><p>Divide and conquer sorting.</p></div>
+    <div class="card"><h3>7. Quick Sort</h3><p>Partition array using pivot.</p></div>
+    <div class="card"><h3>8. DFS</h3><p>Depth-first traversal of graph/tree.</p></div>
+    <div class="card"><h3>9. BFS</h3><p>Breadth-first traversal of graph/tree.</p></div>
+    <div class="card"><h3>10. Dijkstra</h3><p>Shortest path algorithm.</p></div>
+</div>
+
+<!-- PSEUDOCODE -->
+<h2 class="page-title" id="pseudocode">10 Pseudocode</h2>
+<div class="card-container">
+    <div class="card"><h3>1. Linear Search</h3><pre>FOR each item in array: IF item == target RETURN index</pre></div>
+    <div class="card"><h3>2. Binary Search</h3><pre>low=0; high=n-1; WHILE low<=high: mid=(low+high)/2 …</pre></div>
+    <div class="card"><h3>3. Bubble Sort</h3><pre>FOR i=0 to n-1: FOR j=0 to n-i-1: SWAP if needed</pre></div>
+    <div class="card"><h3>4. Selection Sort</h3><pre>FOR i=0 to n-1: minIndex=i; SWAP min element</pre></div>
+    <div class="card"><h3>5. Insertion Sort</h3><pre>FOR i=1 to n-1: insert element in sorted part</pre></div>
+    <div class="card"><h3>6. Merge Sort</h3><pre>Divide array; merge sorted halves recursively</pre></div>
+    <div class="card"><h3>7. Quick Sort</h3><pre>Choose pivot; partition; recursive sort</pre></div>
+    <div class="card"><h3>8. DFS</h3><pre>Push root to stack; traverse as deep as possible</pre></div>
+    <div class="card"><h3>9. BFS</h3><pre>Enqueue root; visit neighbors level by level</pre></div>
+    <div class="card"><h3>10. Dijkstra</h3><pre>Initialize distances; update shortest paths</pre></div>
+</div>
+
+
+<h2 class="page-title" id="datastructures">Data Structures</h2>
+<div class="card-container">
+    <div class="card"><h3>Array (Python)</h3><pre>arr=[1,2,3,4,5]\nfor x in arr: print(x)</pre></div>
+    <div class="card"><h3>Stack (Python)</h3><pre>stack=[]\nstack.append(1)\nstack.append(2)\nstack.pop()</pre></div>
+    <div class="card"><h3>Queue (Python)</h3><pre>from collections import deque\nq=deque()\nq.append(1)\nq.append(2)\nq.popleft()</pre></div>
+    <div class="card"><h3>Tree Traversals (Python)</h3><pre>def inorder(node):\n if node: inorder(node.left)\n print(node.val)\n inorder(node.right)</pre></div>
+</div>
+
+<h2 class="page-title" id="maker">Website Creators</h2>
+<div class="card-container">
+    <div class="card">
+        <img src="images/mike.jpg" alt="MIKE GANO" class="profile-pic">
+        <h3>MIKE GANO</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/wenny.jpg" alt="WENNY LICAY" class="profile-pic">
+        <h3>WENNY LICAY</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/ronald.jpg" alt="RONALD OBA" class="profile-pic">
+        <h3>RONALD OBA</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/edrian.jpg" alt="EDRIAN PIAMONTE" class="profile-pic">
+        <h3>EDRIAN PIAMONTE</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/janel.jpg" alt="JANEL VALDEZ" class="profile-pic">
+        <h3>JANEL VALDEZ</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/joywyn.jpg" alt="JOYWYN FERNANDEZ" class="profile-pic">
+        <h3>JOYWYN FERNANDEZ</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/adrian.jpg" alt="ADRIAN CREDO" class="profile-pic">
+        <h3>ADRIAN CREDO</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/rechie.jpg" alt="RECHIE JAVIER" class="profile-pic">
+        <h3>RECHIE JAVIER</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+    <div class="card">
+        <img src="images/rechie.jpg" alt="CJ SALVADOR" class="profile-pic">
+        <h3>CJ SALVADOR</h3>
+        <p><b>Course:</b> BSIT 2-D</p>
+    </div>
+</div>
+
+
+
+<button id="darkBtn" onclick="toggleDark()">Dark Mode</button>
+
+<script>
+    function toggleDark() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>
